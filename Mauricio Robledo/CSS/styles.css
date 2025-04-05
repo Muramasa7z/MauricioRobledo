@@ -2,6 +2,8 @@ body {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     padding: 40px 0 20px;
+    font-family: 'Bangers', cursive; /* Fuente de letra bangers*/
+    font-size: larger;
 }
 
 /* Con esto logré poner los bordes arriba y abajo de color negro*/

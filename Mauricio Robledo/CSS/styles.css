@@ -1,48 +1,72 @@
-body {
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    padding: 40px 0 20px;
-    font-family: 'Bangers', cursive; /* Fuente de letra bangers*/
+/* CARACTERÍSTICAS DEL BODY*/
+    body {
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        padding: 40px 0 20px;
+        font-family: 'Bangers', cursive;
+    }
+/* CARACTERÍSTICAS ESPECÍFICAS DE HEAD1*/
+    h1 {
     font-size: larger;
-}
+    }
 
-/* Con esto logré poner los bordes arriba y abajo de color negro*/
-.navbar {
-    background-color: #000 !important;
-  }
+    p {
+        font-size: large;
+        }
 
-/* Color y otros del Footer*/
-footer {
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    padding: 40px 0 20px;
-}
+/* NAVBAR VARIOS*/
+    /* Con esto logré poner los bordes arriba y abajo de color negro*/
+    .navbar {
+        background-color: #000 !important;
+    }
 
-/* Color del container fluid */
-.container-fluid {
-    background-color: #FFA500; /* Naranja */
-}
-/* Color del container normal */
-.container {
-    background-color: #ffffff; /* Naranja */
-}
+/* FOOTER VARIOS*/
+    footer {
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        padding: 40px 0 20px;
+    }
 
-/* Para ajustar carrusel según ancho de la pagina y el centraje con margin */
-#carouselMenu {
-    max-width: 80%; 
-    margin: 0 auto; /* Centra el carrusel en la página */
-}
-  
-/* En pantallas más pequeñas, lo hacemos un poco más pequeño */
-@media (max-width: 768px) {
-#carouselMenu {
-    max-width: 90%; 
-    height: 300px;
-}
-}
+/* CONTAINERS */
+    /* Color del container fluid */
+    .container-fluid {
+        background-color: #FFA500; /* Naranja */
+    }
+    /* Color del container normal */
+    .container {
+        background-color: #ffffff; /* Naranja */
+    }
 
-/* Un separador simple: es una línea negra con grosor de 5px */
-.separator {
-    border-top: 5px solid rgb(0, 0, 0); 
-    margin: 20px 0; 
-  }
+
+
+/* CARRUSEL */
+    /* Para ajustar carrusel según ancho de la pagina y el centraje con margin */
+    #carouselMenu {
+        max-width: 70%; 
+        margin: 0 auto; /* Centra el carrusel en la página */
+    }
+    
+    /* En pantallas más pequeñas, lo hacemos un poco más pequeño */
+    @media (max-width: 768px) {
+    #carouselMenu {
+        max-width: 90%; 
+        height: 300px;
+    }
+    }
+    /*Posición de las flechitas*/
+    .carousel-control-prev,
+    .carousel-control-next {
+    position: absolute; /* Ahora las flechas están fijas respecto al carrusel */
+    top: 50%; /* Centramos las flechas verticalmente */
+    transform: translateY(-50%); /* Para que queden bien centradas en el eje vertical */
+    width: 3rem; /* Con esto pude modificar que estuvieran más hacia fuera */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+/* SEPARADOR SIMPLE DE COLOR NEGRO, ANCHO AJUSTABLE */
+    .separator {
+        border-top: 5px solid rgb(0, 0, 0); 
+        margin: 20px 0; 
+    }

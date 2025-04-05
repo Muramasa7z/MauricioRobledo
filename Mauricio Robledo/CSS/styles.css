@@ -4,6 +4,10 @@ body {
     padding: 40px 0 20px;
 }
 
+/* Con esto logré poner los bordes arriba y abajo de color negro*/
+.navbar {
+    background-color: #000 !important;
+  }
 
 /* Color y otros del Footer*/
 footer {
@@ -37,6 +41,6 @@ footer {
 
 /* Un separador simple: es una línea negra con grosor de 5px */
 .separator {
-    border-top: 10px solid rgb(156, 0, 0); 
+    border-top: 5px solid rgb(0, 0, 0); 
     margin: 20px 0; 
   }

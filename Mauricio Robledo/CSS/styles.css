@@ -1,72 +1,158 @@
-/* CARACTERÍSTICAS DEL BODY*/
-    body {
-        background-color: rgb(255, 255, 255);
-        color: rgb(0, 0, 0);
-        padding: 40px 0 20px;
-        font-family: 'Bangers', cursive;
-    }
-/* CARACTERÍSTICAS ESPECÍFICAS DE HEAD1*/
-    h1 {
-    font-size: larger;
-    }
+/* Estilos generales */
+body {
+  font-family: 'Bangers', cursive; /* Fuente personalizada */
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
 
-    p {
-        font-size: large;
-        }
+/* Separador improvisado negro */
+.separator {
+  border-top: 5px solid #000;
+  margin: 0px;
+}
 
-/* NAVBAR VARIOS*/
-    /* Con esto logré poner los bordes arriba y abajo de color negro*/
-    .navbar {
-        background-color: #000 !important;
-    }
+/* Navbar */
 
-/* FOOTER VARIOS*/
-    footer {
-        background-color: rgb(255, 255, 255);
-        color: rgb(0, 0, 0);
-        padding: 40px 0 20px;
-    }
+.navbar {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px 0; /* Aumentamos el padding vertical */
+}
 
-/* CONTAINERS */
-    /* Color del container fluid */
-    .container-fluid {
-        background-color: #FFA500; /* Naranja */
-    }
-    /* Color del container normal */
-    .container {
-        background-color: #ffffff; /* Naranja */
-    }
+.navbar .navbar-brand, .navbar .navbar-nav .nav-link {
+  color: rgb(255, 255, 255); /* Color de texto de la navbar */
+}
+.navbar .navbar-toggler-icon {
+  color: rgb(255, 255, 255);
+}
+.navbar, 
+.navbar .nav-link, 
+.navbar .navbar-brand, 
+.navbar span {
+  font-size: 1.3rem; /* Aumenta el tamaño del texto */
+}
+
+.navbar .nav-link {
+  color: white !important; /* Forzamos blanco como color base */
+  transition: color 0.3s ease;
+}
+.navbar .nav-link:hover {
+  color: #ff9900 !important; /* Naranja al pasar el mouse */
+}
 
 
+/* Carrusel */
+.carousel-item img {
+  height: auto;
+  width: 700%;
+  object-fit: cover;
+  object-position: center;
+}
+/* Títulos */
+h1, h2, h3 {
+  font-weight: bold;
+}
 
-/* CARRUSEL */
-    /* Para ajustar carrusel según ancho de la pagina y el centraje con margin */
-    #carouselMenu {
-        max-width: 70%; 
-        margin: 0 auto; /* Centra el carrusel en la página */
-    }
-    
-    /* En pantallas más pequeñas, lo hacemos un poco más pequeño */
-    @media (max-width: 768px) {
-    #carouselMenu {
-        max-width: 90%; 
-        height: 300px;
-    }
-    }
-    /*Posición de las flechitas*/
-    .carousel-control-prev,
-    .carousel-control-next {
-    position: absolute; /* Ahora las flechas están fijas respecto al carrusel */
-    top: 50%; /* Centramos las flechas verticalmente */
-    transform: translateY(-50%); /* Para que queden bien centradas en el eje vertical */
-    width: 3rem; /* Con esto pude modificar que estuvieran más hacia fuera */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    }
+h1 {
+  font-size: 4rem;
+  color: #fff;
+  background-color: #d8900a;
+  padding: 50px;
+}
 
-/* SEPARADOR SIMPLE DE COLOR NEGRO, ANCHO AJUSTABLE */
-    .separator {
-        border-top: 5px solid rgb(0, 0, 0); 
-        margin: 20px 0; 
-    }
+h2 {
+  font-size: 2rem;
+  color: #d8900a;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: black;
+}
+
+/* Cartas de los productos */
+.card {
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card-body {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #666;
+}
+
+.card-text strong {
+  font-size: 1.1rem;
+  color: #d8900a;
+}
+
+/* Estilo de imágenes */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Section de historia */
+#historia .text-justify {
+  text-align: justify;
+  line-height: 1.6;
+}
+
+#historia .testimonial-card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card .card-body {
+  padding: 20px;
+}
+
+.testimonial-card .card-text {
+  font-size: 1rem;
+  color: #444;
+}
+
+/* Botones y controles del carrusel */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-color: #d8900a;
+}
+
+/* Estilo de las sucursales */
+#sucursales .card {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#sucursales .card-body {
+  padding: 15px;
+  background-color: #fff;
+}
+
+#sucursales .card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+#sucursales .card-text {
+  font-size: 1rem;
+  color: #666;
+}

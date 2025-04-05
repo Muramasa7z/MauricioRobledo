@@ -1,3 +1,11 @@
+body {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 40px 0 20px;
+}
+
+
+/* Color y otros del Footer*/
 footer {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
@@ -5,7 +13,30 @@ footer {
 }
 
 /* Color del container fluid */
-
 .container-fluid {
     background-color: #FFA500; /* Naranja */
+}
+/* Color del container normal */
+.container {
+    background-color: #ffffff; /* Naranja */
+}
+
+/* Para ajustar carrusel según ancho de la pagina y el centraje con margin */
+#carouselMenu {
+    max-width: 80%; 
+    margin: 0 auto; /* Centra el carrusel en la página */
+}
+  
+/* En pantallas más pequeñas, lo hacemos un poco más pequeño */
+@media (max-width: 768px) {
+#carouselMenu {
+    max-width: 90%; 
+    height: 300px;
+}
+}
+
+/* Un separador simple: es una línea negra con grosor de 5px */
+.separator {
+    border-top: 10px solid rgb(156, 0, 0); 
+    margin: 20px 0; 
   }

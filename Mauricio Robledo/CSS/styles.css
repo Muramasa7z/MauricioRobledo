@@ -31,10 +31,10 @@ h3 {
   color: black;
 }
 
-/* Ajustes responsivos para el título "h1" */
+/* Ajustes responsivos para LOS títulos "h1" y también "h2" */
 /* Esto es para reducir tamaño a tablets y ajustar el padding en pantallas medianas */
 @media (max-width: 768px) {
-  h1 {
+  h1,h2 {
     font-size: 3.5rem;
     padding: 40px;
   }
@@ -42,7 +42,7 @@ h3 {
 
 /* Esto es para reducir tamaño y volver a ajustar padding para pantallas pequeñas */
 @media (max-width: 576px) {
-  h1 {
+  h1,h2 {
     font-size: 2.5rem;   /* Reducir más para pantallas pequeñas */
     padding: 30px;   /* Ajustar padding en pantallas pequeñas */
   }
@@ -50,7 +50,7 @@ h3 {
 
 /* Esto es para reducir tamaño y volver a ajustar padding para pantallas MUY pequeñas */
 @media (max-width: 375px) {
-  h1 {
+  h1,h2 {
     font-size: 2rem;
     padding: 20px;
   }

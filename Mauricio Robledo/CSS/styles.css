@@ -1,59 +1,86 @@
-/* Estilos generales del Body */
+/* Estilo general del Body */
 body {
-  font-family: 'Bangers', cursive; /* Fuente personalizada */
+  font-family: 'Bangers', cursive;   /* Fuente personalizada Bangers */
   background-color: #f4f4f4;
   margin: 0;
   padding: 0;
 }
 
-/* Estilo de Títulos h1,2 y 3 */
-h1, h2, h3 {
+
+/* Estilo de Títulos h1, h2 y 3 */
+h1,
+h2,
+h3 {
   font-weight: bold;
 }
+
 h1 {
   font-size: 4rem;
   color: #fff;
   background-color: #d8900a;
   padding: 50px;
 }
+
 h2 {
   font-size: 2rem;
   color: #000000;
 }
+
 h3 {
   font-size: 1.5rem;
   color: black;
 }
 
-/* Separador improvisado negro */
+/* Ajustes responsivos para el título "h1" */
+/* Esto es para reducir tamaño a tablets y ajustar el padding en pantallas medianas */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3.5rem;
+    padding: 40px;
+  }
+}
+
+/* Esto es para reducir tamaño y volver a ajustar padding para pantallas pequeñas */
+@media (max-width: 576px) {
+  h1 {
+    font-size: 2.5rem;   /* Reducir más para pantallas pequeñas */
+    padding: 30px;   /* Ajustar padding en pantallas pequeñas */
+  }
+}
+
+/* Esto es para reducir tamaño y volver a ajustar padding para pantallas MUY pequeñas */
+@media (max-width: 375px) {
+  h1 {
+    font-size: 2rem;
+    padding: 20px;
+  }
+}
+
+
+/* Separador negro editable */
 .separator {
   border-top: 5px solid #000;
   margin: 0px;
 }
 
-/* Caract. Navbar */
+/* Caract. de la Navbar */
 .navbar {
   background-color: rgba(0, 0, 0, 0.8);
-  padding: 20px 0; /* Aumentamos el padding vertical */
+  padding: 20px 0;  /* para aumentar el padding vertical*/
 }
-.navbar .navbar-brand, .navbar .navbar-nav .nav-link {
-  color: rgb(255, 255, 255); /* Color de texto de la navbar */
-}
-.navbar .navbar-toggler-icon {
-  color: rgb(255, 255, 255);
-}
-.navbar, 
-.navbar .nav-link, 
-.navbar .navbar-brand, 
-.navbar span {
-  font-size: 1.3rem; /* Aumenta el tamaño del texto */
-}
+
 .navbar .nav-link {
-  color: white !important; /* Forzamos blanco como color base */
+  color: rgb(255, 255, 255);  /* Color de texto de la navbar */
+  font-size: 1.3rem;   /* Aumenta el tamaño del texto en todo lo anterior */
   transition: color 0.3s ease;
 }
+
 .navbar .nav-link:hover {
-  color: #ff9900 !important; /* Naranja al pasar el mouse */
+  color: #ff9900 !important;   /* Color Naranjo al pasar el mouse */
+}
+
+.navbar span {
+  font-size: 1.3rem;   /* Aumenta el tamaño del texto en el span del navbar */
 }
 
 /* Carrusel */
@@ -65,7 +92,9 @@ h3 {
   border-radius: 10px;
 }
 
-.carousel-control-prev-icon, .carousel-control-next-icon {    /*Boton del carrusel*/
+/*Boton del carrusel*/
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -86,22 +115,27 @@ h3 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
+
 .card-body {
   padding: 20px;
   background-color: #ffffff;
 }
+
 .card:hover {
   transform: translateY(-10px);
 }
+
 .card-title {
   font-size: 1.3rem;
   font-weight: bold;
   color: #333;
 }
+
 .card-text {
   font-size: 1.1rem;
   color: #666;
 }
+
 .card-text strong {
   font-size: 1.2rem;
   color: #d8900a;
@@ -118,13 +152,16 @@ img {
   text-align: justify;
   line-height: 1.6;
 }
+
 #historia .testimonial-card {
   border: none;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 .testimonial-card .card-body {
   padding: 20px;
 }
+
 .testimonial-card .card-text {
   font-size: 1.1rem;
   color: #444;
@@ -135,26 +172,35 @@ img {
   border-radius: 8px;
   overflow: hidden;
 }
+
 #sucursales .card-body {
   padding: 15px;
   background-color: #fff;
 }
+
 #sucursales .card-title {
   font-size: 1.2rem;
   font-weight: bold;
   color: #333;
 }
+
 #sucursales .card-text {
   font-size: 1.2rem;
   color: #666;
 }
+
+/* Colores del Footer */
 footer {
   color: #f4f4f4;
-background-color: #000;
+  background-color: #000;
 }
 
+footer a:hover {
+  color: #ffcc00;   /* Cambia el color cuando el usuario pase el mouse a los links */
+}
+
+/* Ajuste Global a los "Link" del Navbar para que deje sobre los títulos del menú siempre */
 html {
-  scroll-padding-top: 105px; /* Ajusta los "Link" del Navbar para que deje sobre el título siempre */
-  scroll-behavior: smooth;
+  scroll-padding-top: 105px;
+  scroll-behavior: smooth;   /* Para que el scrolling sea mas suavecito */
 }
-

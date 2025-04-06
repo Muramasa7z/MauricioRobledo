@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <title>EL Aniquilador del Hambre</title>
   <meta charset="UTF-8">
@@ -7,8 +8,10 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="CSS/styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">   <!--Fuente de letra "Bangers"-->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> <!-- Font Awesome (Las estrellas) -->
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+  <!--Fuente de letra "Bangers"-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <!--Font Awesome (Las estrellas de las reseñas)-->
 </head>
 
 <!--Separador Head/Body-->
@@ -22,11 +25,12 @@
         <img src="imágenes/Logo.png" alt="Logo" style="width: 65px; height: auto;">
         <span class="text-white ms-2 fs-4">El Aniquilador del Hambre</span> <!--Nombre de la tienda-->
       </div>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mx-auto">  <!-- Se añade mx-auto para centrar -->
+        <ul class="navbar-nav mx-auto"> <!--Recordar que se centró con mx-auto-->
           <li class="nav-item">
             <a class="nav-link active text-white" href="#INICIO">INICIO</a>
           </li>
@@ -47,7 +51,7 @@
     </div>
   </nav>
 
-  <!--BANNER-->
+  <!--"BANNER" (solo imágen)-->
   <div class="container-fluid p-0">
     <section id="INICIO"></section>
     <img src="imágenes/banner.png" alt="Logo" class="img-fluid w-100" style="height: 300px;">
@@ -55,7 +59,7 @@
 
   <div class="separator mt-0"></div> <!--Separador línea negra, sin margen top (mt-0)-->
 
-  <!-- Carrusel de Productos -->
+  <!--Carrusel-->
   <div class="container d-flex justify-content-center py-5">
     <div id="carouselMenu" class="carousel slide" data-bs-ride="carousel" style="max-width: 600px; width: 100%;">
       <div class="carousel-inner">
@@ -78,25 +82,25 @@
     </div>
   </div>
 
-  <!--CARTA-->
+  <!--CARTA LOGO e imágen-->
   <div class="container-fluid text-center p-0">
     <div class="separator mt-0"></div>
     <section id="CARTA"></section>
-    <h1 class="fw-bold text-black" style="background-color: #d8860a;">NUESTRA CARTA</h1> <!-- Título de la carta -->
+    <h1 class="fw-bold text-black" style="background-color: #d8860a;">NUESTRA CARTA</h1>
   </div>
-    <div class="container text-center py-3">
+  <div class="container text-center py-3">
     <img src="imágenes/Carta logo.png" alt="Logo" class="img-fluid carta-logo">
   </div>
 
   <!--Carta de Pancitos-->
   <div class="container text-center">
-    <h2 class="text-white" style="background-color: #000000;">Sándwiches</h2> <!-- Título de la carta -->
+    <h2 class="text-white" style="background-color: #000000;">Sándwiches</h2>
     <div class="row">
-      <!-- pan 1 -->
+      <!--pan 1-->
       <div class="col-md-4 mb-4">
         <div class="card">
           <div class="d-flex justify-content-center">
-            <img src="imágenes/Sandwiches/clásico.png" class="card-img-top img-fluid" alt="Nombre del Plato" style="max-width: 80%; height: auto;">
+            <img src="imágenes/Sandwiches/clásico.png" class="card-img-top img-fluid" alt="Imagen sandwich clasico">
           </div>
           <div class="card-body">
             <h5 class="card-title">Sándwich clásico</h5>
@@ -105,11 +109,11 @@
           </div>
         </div>
       </div>
-      <!-- pan 2 -->
+      <!--pan 2-->
       <div class="col-md-4 mb-4">
         <div class="card">
           <div class="d-flex justify-content-center">
-            <img src="imágenes/Sandwiches/A lo pobre.png" class="card-img-top img-fluid" alt="Nombre del Plato" style="max-width: 80%; height: auto;">
+            <img src="imágenes/Sandwiches/A lo pobre.png" class="card-img-top img-fluid" alt="Imagen a lo pobre">
           </div>
           <div class="card-body">
             <h5 class="card-title">Sandwich A lo Pobre</h5>
@@ -118,24 +122,25 @@
           </div>
         </div>
       </div>
-      <!-- pan 3 -->
+      <!--pan 3-->
       <div class="col-md-4 mb-4">
         <div class="card">
           <div class="d-flex justify-content-center">
-            <img src="imágenes/Sandwiches/El Gringo.png" class="card-img-top img-fluid" alt="Nombre del Plato" style="max-width: 80%; height: auto;">
+            <img src="imágenes/Sandwiches/El Gringo.png" class="card-img-top img-fluid" alt="imagen el gringo">
           </div>
           <div class="card-body">
             <h5 class="card-title">"El Gringo"</h5>
-            <p class="card-text">Sándwich con doble hamburguesa de vacuno, pepinillos, queso mantecoso y queso en lámina.</p>
+            <p class="card-text">Sándwich con doble hamburguesa de vacuno, pepinillos, queso mantecoso y queso en
+              lámina.</p>
             <p class="card-text"><strong>Precio: $9.990</strong></p>
           </div>
         </div>
       </div>
-      <!-- pan 4 -->
+      <!--pan 4-->
       <div class="col-md-4 mb-4">
         <div class="card">
           <div class="d-flex justify-content-center">
-            <img src="imágenes/Sandwiches/Mechada ketchup.png" class="card-img-top img-fluid" alt="Nombre del Plato" style="max-width: 80%; height: auto;">
+            <img src="imágenes/Sandwiches/Mechada ketchup.png" class="card-img-top img-fluid" alt="imagen mechada">
           </div>
           <div class="card-body">
             <h5 class="card-title">Sandwich Mechada Ketchup</h5>
@@ -144,11 +149,11 @@
           </div>
         </div>
       </div>
-       <!-- pan 5 -->
+      <!--pan 5-->
       <div class="col-md-4 mb-4">
         <div class="card">
           <div class="d-flex justify-content-center">
-            <img src="imágenes/Sandwiches/toque de verde.png" class="card-img-top img-fluid" alt="Nombre del Plato" style="max-width: 80%; height: auto;">
+            <img src="imágenes/Sandwiches/toque de verde.png" class="card-img-top img-fluid" alt="imagen toque verde">
           </div>
           <div class="card-body">
             <h5 class="card-title">"Toque de verde"</h5>
@@ -157,11 +162,11 @@
           </div>
         </div>
       </div>
-       <!-- pan 6 -->
+      <!--pan 6-->
       <div class="col-md-4 mb-4">
         <div class="card">
           <div class="d-flex justify-content-center">
-            <img src="imágenes/Sandwiches/Vacuno bacon.png" class="card-img-top img-fluid" alt="Nombre del Plato" style="max-width: 80%; height: auto;">
+            <img src="imágenes/Sandwiches/Vacuno bacon.png" class="card-img-top img-fluid" alt="imagen bacon">
           </div>
           <div class="card-body">
             <h5 class="card-title">Sandwich Bacon</h5>
@@ -175,26 +180,27 @@
 
   <!--Carta de platos de fondo-->
   <div class="container text-center">
-    <h2 class="text-white" style="background-color: #000000;">Platos de fondo<br>(Todos incluyen arroz o papas fritas a elección)</h2> <!-- Título de la carta -->
+    <h2 class="text-white" style="background-color: #000000;">Platos de fondo<br>(Todos incluyen arroz o papas fritas a
+      elección)</h2>
     <div class="row">
-      <!-- Plato 1 -->
+      <!--Plato 1-->
       <div class="col-md-4 mb-4">
         <div class="card">
           <div class="d-flex justify-content-center">
-            <img src="imágenes/platos de fondo/Ensalada cesar.png" class="card-img-top img-fluid" alt="Nombre del Plato" style="max-width: 80%; height: auto;">
+            <img src="imágenes/platos de fondo/Ensalada cesar.png" class="card-img-top img-fluid" alt="Ensalada césar">
           </div>
           <div class="card-body">
             <h5 class="card-title">Ensalada César</h5>
-            <p class="card-text">Ensalada  clásica de ayer hoy y siempre.</p>
+            <p class="card-text">Ensalada clásica de ayer hoy y siempre.</p>
             <p class="card-text"><strong>Precio: $5.990</strong></p>
           </div>
         </div>
       </div>
-      <!-- Plato 2 -->
+      <!--Plato 2-->
       <div class="col-md-4 mb-4">
         <div class="card">
           <div class="d-flex justify-content-center">
-            <img src="imágenes/platos de fondo/lasagna.png" class="card-img-top img-fluid" alt="Nombre del Plato" style="max-width: 80%; height: auto;">
+            <img src="imágenes/platos de fondo/lasagna.png" class="card-img-top img-fluid" alt="Lasagna">
           </div>
           <div class="card-body">
             <h5 class="card-title">Lasgna</h5>
@@ -203,11 +209,11 @@
           </div>
         </div>
       </div>
-      <!-- Plato 3 -->
+      <!--Plato 3-->
       <div class="col-md-4 mb-4">
         <div class="card">
           <div class="d-flex justify-content-center">
-            <img src="imágenes/platos de fondo/Pastas.png" class="card-img-top img-fluid" alt="Nombre del Plato" style="max-width: 80%; height: auto;">
+            <img src="imágenes/platos de fondo/Pastas.png" class="card-img-top img-fluid" alt="Pastas">
           </div>
           <div class="card-body">
             <h5 class="card-title">Pastas</h5>
@@ -216,37 +222,39 @@
           </div>
         </div>
       </div>
-      <!-- Plato 4 -->
+      <!--Plato 4-->
       <div class="col-md-4 mb-4">
         <div class="card">
           <div class="d-flex justify-content-center">
-            <img src="imágenes/platos de fondo/pescado frito.png" class="card-img-top img-fluid" alt="Nombre del Plato" style="max-width: 80%; height: auto;">
+            <img src="imágenes/platos de fondo/pescado frito.png" class="card-img-top img-fluid" alt="Pescado frito">
           </div>
           <div class="card-body">
             <h5 class="card-title">Pescado del día frito</h5>
-            <p class="card-text">Pescado frito del día frito en sartén.<br>Fresco directo de la feria fluvial de Valdivia.</p>
+            <p class="card-text">Pescado frito del día frito en sartén.<br>Fresco directo de la feria fluvial de
+              Valdivia.</p>
             <p class="card-text"><strong>Precio: $12.990</strong></p>
           </div>
         </div>
       </div>
-       <!-- Plato 5 -->
+      <!--Plato 5-->
       <div class="col-md-4 mb-4">
         <div class="card">
           <div class="d-flex justify-content-center">
-            <img src="imágenes/platos de fondo/seitan frito.png" class="card-img-top img-fluid" alt="Nombre del Plato" style="max-width: 80%; height: auto;">
+            <img src="imágenes/platos de fondo/seitan frito.png" class="card-img-top img-fluid" alt="Seitan">
           </div>
           <div class="card-body">
             <h5 class="card-title">"El Vegano""</h5>
-            <p class="card-text">Nuestro plato vegano, Seitan Frito con aceite vegeta.<br>Puede incluír puré además de las opciones comúnes.</p>
+            <p class="card-text">Nuestro plato vegano, Seitan Frito con aceite vegeta.<br>Puede incluír puré además de
+              las opciones comúnes.</p>
             <p class="card-text"><strong>Precio: $6.990</strong></p>
           </div>
         </div>
       </div>
-       <!-- Plato 6 -->
+      <!--Plato 6-->
       <div class="col-md-4 mb-4">
         <div class="card">
           <div class="d-flex justify-content-center">
-            <img src="imágenes/platos de fondo/tabla de sushi.png" class="card-img-top img-fluid" alt="Nombre del Plato" style="max-width: 80%; height: auto;">
+            <img src="imágenes/platos de fondo/tabla de sushi.png" class="card-img-top img-fluid" alt="Tabla Sushi">
           </div>
           <div class="card-body">
             <h5 class="card-title">Tabla de Sushi</h5>
@@ -260,13 +268,13 @@
 
   <!--Carta de Bebestibles-->
   <div class="container text-center">
-    <h2 class="text-white" style="background-color: #000000;">Bebestibles</h2> <!-- Título de la carta -->
+    <h2 class="text-white" style="background-color: #000000;">Bebestibles</h2>
     <div class="row">
-      <!-- bebida 1 -->
+      <!--bebida 1-->
       <div class="col-md-4 mb-4">
         <div class="card">
           <div class="d-flex justify-content-center">
-            <img src="imágenes/bebidas/bebida en botella.png" class="card-img-top img-fluid" alt="Nombre del Plato" style="max-width: 80%; height: auto;">
+            <img src="imágenes/bebidas/bebida en botella.png" class="card-img-top img-fluid" alt="Bebida botella">
           </div>
           <div class="card-body">
             <h5 class="card-title">Bebida Botella</h5>
@@ -275,11 +283,11 @@
           </div>
         </div>
       </div>
-      <!-- bebida 2 -->
+      <!--bebida 2-->
       <div class="col-md-4 mb-4">
         <div class="card">
           <div class="d-flex justify-content-center">
-            <img src="imágenes/bebidas/bebida en lata.png" class="card-img-top img-fluid" alt="Nombre del Plato" style="max-width: 80%; height: auto;">
+            <img src="imágenes/bebidas/bebida en lata.png" class="card-img-top img-fluid" alt="Bebida lata">
           </div>
           <div class="card-body">
             <h5 class="card-title">Bebida en Lata</h5>
@@ -288,11 +296,11 @@
           </div>
         </div>
       </div>
-      <!-- bebida 3 -->
+      <!--bebida 3-->
       <div class="col-md-4 mb-4">
         <div class="card">
           <div class="d-flex justify-content-center">
-            <img src="imágenes/bebidas/cerveza botella.png" class="card-img-top img-fluid" alt="Nombre del Plato" style="max-width: 80%; height: auto;">
+            <img src="imágenes/bebidas/cerveza botella.png" class="card-img-top img-fluid" alt="Cerveza">
           </div>
           <div class="card-body">
             <h5 class="card-title">Cerveza Corona</h5>
@@ -301,11 +309,11 @@
           </div>
         </div>
       </div>
-      <!-- bebida 4 -->
+      <!--bebida 4-->
       <div class="col-md-4 mb-4">
         <div class="card">
           <div class="d-flex justify-content-center">
-            <img src="imágenes/bebidas/jugo natural.png" class="card-img-top img-fluid" alt="Nombre del Plato" style="max-width: 80%; height: auto;">
+            <img src="imágenes/bebidas/jugo natural.png" class="card-img-top img-fluid" alt="Jugos">
           </div>
           <div class="card-body">
             <h5 class="card-title">Jugo Natural</h5>
@@ -314,11 +322,11 @@
           </div>
         </div>
       </div>
-       <!-- bebida 5 -->
+      <!--bebida 5-->
       <div class="col-md-4 mb-4">
         <div class="card">
           <div class="d-flex justify-content-center">
-            <img src="imágenes/bebidas/limonada.png" class="card-img-top img-fluid" alt="Nombre del Plato" style="max-width: 80%; height: auto;">
+            <img src="imágenes/bebidas/limonada.png" class="card-img-top img-fluid" alt="Limonada">
           </div>
           <div class="card-body">
             <h5 class="card-title">Limonada natural</h5>
@@ -327,11 +335,11 @@
           </div>
         </div>
       </div>
-       <!-- bebida 6 -->
+      <!--bebida 6-->
       <div class="col-md-4 mb-4">
         <div class="card">
           <div class="d-flex justify-content-center">
-            <img src="imágenes/bebidas/shop cerveza.png" class="card-img-top img-fluid" alt="Nombre del Plato" style="max-width: 80%; height: auto;">
+            <img src="imágenes/bebidas/shop cerveza.png" class="card-img-top img-fluid" alt="Shop cerveza">
           </div>
           <div class="card-body">
             <h5 class="card-title">Cerveza 500ml</h5>
@@ -343,28 +351,28 @@
     </div>
   </div>
 
-  <!--Carta de Postres-->
+  <!--Carta de los Postres-->
   <div class="container text-center">
-    <h2 class="text-white" style="background-color: #000000;">Postres</h2> <!-- Título de la carta -->
+    <h2 class="text-white" style="background-color: #000000;">Postres</h2>
     <div class="row">
-      <!-- postre 1 -->
+      <!--postre 1-->
       <div class="col-md-4 mb-4">
         <div class="card">
           <div class="d-flex justify-content-center">
-            <img src="imágenes/postres/copa de helado.png" class="card-img-top img-fluid" alt="Nombre del Plato" style="max-width: 80%; height: auto;">
+            <img src="imágenes/postres/copa de helado.png" class="card-img-top img-fluid" alt="Helado copa">
           </div>
           <div class="card-body">
             <h5 class="card-title">Copa de Helado 350ml</h5>
-            <p class="card-text">2 bolitas de helado a elección.<br>Consultar por variedad de sabores</p>
+            <p class="card-text">2 bolitas de helado a elección.<br>Consultar por variedad de sabores.</p>
             <p class="card-text"><strong>Precio: $2.990</strong></p>
           </div>
         </div>
       </div>
-      <!-- postre 2 -->
+      <!--postre 2-->
       <div class="col-md-4 mb-4">
         <div class="card">
           <div class="d-flex justify-content-center">
-            <img src="imágenes/postres/durazno a la crema.png" class="card-img-top img-fluid" alt="Nombre del Plato" style="max-width: 80%; height: auto;">
+            <img src="imágenes/postres/durazno a la crema.png" class="card-img-top img-fluid" alt="duraznos a la crema">
           </div>
           <div class="card-body">
             <h5 class="card-title">Nube de Duraznos</h5>
@@ -373,11 +381,12 @@
           </div>
         </div>
       </div>
-      <!-- postre 3 -->
+      <!--postre 3-->
       <div class="col-md-4 mb-4">
         <div class="card">
           <div class="d-flex justify-content-center">
-            <img src="imágenes/postres/frutillas a la crema.png" class="card-img-top img-fluid" alt="Nombre del Plato" style="max-width: 80%; height: auto;">
+            <img src="imágenes/postres/frutillas a la crema.png" class="card-img-top img-fluid"
+              alt="Frutillas a la crema">
           </div>
           <div class="card-body">
             <h5 class="card-title">Frutillas a la crema</h5>
@@ -386,37 +395,39 @@
           </div>
         </div>
       </div>
-      <!-- postre 4 -->
+      <!--postre 4-->
       <div class="col-md-4 mb-4">
         <div class="card">
           <div class="d-flex justify-content-center">
-            <img src="imágenes/postres/muffin magico.png" class="card-img-top img-fluid" alt="Nombre del Plato" style="max-width: 80%; height: auto;">
+            <img src="imágenes/postres/muffin magico.png" class="card-img-top img-fluid" alt="Muffin">
           </div>
           <div class="card-body">
-            <h5 class="card-title">"El Muffin Mágico""</h5>
+            <h5 class="card-title">"El Muffin Mágico"</h5>
             <p class="card-text">Muffin de vainilla con crema de color.<br>Incluye toppings a elección del chef.</p>
             <p class="card-text"><strong>Precio: $4.990</strong></p>
           </div>
         </div>
       </div>
-       <!-- postre 5 -->
+      <!--postre 5-->
       <div class="col-md-4 mb-4">
         <div class="card">
           <div class="d-flex justify-content-center">
-            <img src="imágenes/postres/pie de limon con topping berrie.png" class="card-img-top img-fluid" alt="Nombre del Plato" style="max-width: 80%; height: auto;">
+            <img src="imágenes/postres/pie de limon con topping berrie.png" class="card-img-top img-fluid"
+              alt="Pie Limón">
           </div>
           <div class="card-body">
             <h5 class="card-title">Pie de Limón</h5>
-            <p class="card-text">Mini Pie de limón clásico de 10cm.<br>Incluye topping de berries a elección del chef.</p>
+            <p class="card-text">Mini Pie de limón clásico de 10cm.<br>Incluye topping de berries a elección del chef.
+            </p>
             <p class="card-text"><strong>Precio: $3.990</strong></p>
           </div>
         </div>
       </div>
-       <!-- postre 6 -->
+      <!--postre 6-->
       <div class="col-md-4 mb-4">
         <div class="card">
           <div class="d-flex justify-content-center">
-            <img src="imágenes/postres/tiramisú.png" class="card-img-top img-fluid" alt="Nombre del Plato" style="max-width: 80%; height: auto;">
+            <img src="imágenes/postres/tiramisú.png" class="card-img-top img-fluid" alt="Tirasmisú imagen">
           </div>
           <div class="card-body">
             <h5 class="card-title">Tiramisú</h5>
@@ -428,92 +439,106 @@
     </div>
   </div>
 
-  <!--QUIENES SOMOS Y TESTIMONIOS-->
+  <!--QUIENES SOMOS Y TESTIMONIOS CLIENTES-->
   <section id="historia" class="py-5">
     <div class="container border py-5">
       <section id="QUIENESSOMOS"></section>
       <h1 class="text-center mb-4 text-black">Quiénes Somos</h1>
+      <!--HISTORIA-->
       <h2 class="section-title">Nuestra Historia</h2>
       <div class="row mb-5">
         <div class="col-lg-6">
-          <img src="imágenes/historia viejo.png" alt="Fundación de El Aniquilador del Hambre" class="img-fluid rounded shadow mb-4">
+          <img src="imágenes/historia viejo.png" alt="Fundación de El Aniquilador del Hambre"
+            class="img-fluid rounded shadow mb-4">
           <h4 class="mb-3">Nuestros Inicios (1975)</h4>
-          <p class="text-justify">Todo comenzó hace 50 años cuando don Mauricio Robledo, un apasionado de la gastronomía chilena, abrió un pequeño local en el centro de Valdivia. Con apenas cuatro mesas y un menú limitado, El Aniquilador del Hambre nació con la promesa de ofrecer las mejores preparaciones caseras a precios accesibles.</p>
+          <p class="text-justify">Todo comenzó hace 50 años cuando don Mauricio Robledo, un apasionado de la gastronomía
+            chilena, abrió un pequeño local en el centro de Valdivia. Con apenas cuatro mesas y un menú limitado, El
+            Aniquilador del Hambre nació con la promesa de ofrecer las mejores preparaciones caseras a precios
+            accesibles.</p>
         </div>
         <div class="col-lg-6">
-          <img src="imágenes/historia nuevo.png" alt="Expansión de El Aniquilador del Hambre" class="img-fluid rounded shadow mb-4">
+          <img src="imágenes/historia nuevo.png" alt="Expansión de El Aniquilador del Hambre"
+            class="img-fluid rounded shadow mb-4">
           <h4 class="mb-3">Crecimiento y Expansión (1990-2025)</h4>
-          <p class="text-justify">Durante los años 90, la popularidad de nuestros sandwiches y platos insignia nos permitió expandirnos a una segunda ubicación. Hoy, después de 50 años de trayectoria, mantenemos la misma pasión por servir alimentos de calidad, respetando las recetas originales que han alimentado a generaciones de chilenos, pero incorporando innovaciones que nos mantienen vigentes en el competitivo mercado gastronómico.</p>
+          <p class="text-justify">Durante los años 90, la popularidad de nuestros sandwiches y platos insignia nos
+            permitió expandirnos a una segunda ubicación. Hoy, después de 50 años de trayectoria, mantenemos la misma
+            pasión por servir alimentos de calidad, respetando las recetas originales que han alimentado a generaciones
+            de chilenos, pero incorporando innovaciones que nos mantienen vigentes en el competitivo mercado
+            gastronómico.</p>
         </div>
       </div>
 
+      <!--RESEÑAS-->
       <h2 class="mb-4">Lo que dicen nuestros clientes</h2>
-        <div class="row">
-          <div class="col-md-4 mb-4">
-            <div class="card testimonial-card shadow h-100">
-              <div class="card-body">
-                <div class="d-flex align-items-center mb-3">
-                  <div>
-                    <h5 class="card-title mb-0">Paula Rosales</h5>
-                    <small class="text-muted">Cliente desde 2010</small>
-                  </div>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card testimonial-card shadow h-100">
+            <div class="card-body">
+              <div class="d-flex align-items-center mb-3">
+                <div>
+                  <h5 class="card-title mb-0">Paula Rosales</h5>
+                  <small class="text-muted">Cliente desde 2010</small>
                 </div>
-                <p class="card-text">"El chacarero es simplemente el mejor de Valdivia. Vengo desde hace más de 10 años y la calidad nunca ha cambiado. Atención impecable y ambiente familiar."</p>
-                <div class="text-warning">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
+              </div>
+              <p class="card-text">"El Sandich Bacon es simplemente el mejor de Valdivia. Vengo desde hace más de 10
+                años y la calidad nunca ha cambiado. Atención impecable y ambiente familiar."</p>
+              <div class="text-warning">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
               </div>
             </div>
           </div>
-            <div class="col-md-4 mb-4">
-              <div class="card testimonial-card shadow h-100">
-                <div class="card-body">
-                  <div class="d-flex align-items-center mb-3">
-                    <div>
-                      <h5 class="card-title mb-0">Cristian Herrera</h5>
-                      <small class="text-muted">Cliente desde 1995</small>
-                    </div>
-                  </div>
-                  <p class="card-text">"He visto crecer este restaurante durante casi 30 años. Sus platos a lo pobre son legendarios y el ambiente siempre es acogedor. Un clásico que no pasa de moda."</p>
-                  <div class="text-warning">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                  </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card testimonial-card shadow h-100">
+            <div class="card-body">
+              <div class="d-flex align-items-center mb-3">
+                <div>
+                  <h5 class="card-title mb-0">Cristian Herrera</h5>
+                  <small class="text-muted">Cliente desde 1995</small>
                 </div>
+              </div>
+              <p class="card-text">"He visto crecer este restaurante durante casi 30 años. Sus platos de fondo son
+                legendarios y el ambiente siempre es acogedor. Un clásico que no pasa de moda."</p>
+              <div class="text-warning">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
               </div>
             </div>
-              <div class="col-md-4 mb-4">
-                <div class="card testimonial-card shadow h-100">
-                  <div class="card-body">
-                    <div class="d-flex align-items-center mb-3">
-                      <div>
-                        <h5 class="card-title mb-0">Carlos Arcos</h5>
-                        <small class="text-muted">Cliente desde 2018</small>
-                      </div>
-                    </div>
-                    <p class="card-text">"Descubrí este lugar por recomendación y ahora vengo cada semana. La Hamburguesa Aniquiladora es adictiva y el servicio es rápido, perfecto para mi hora de almuerzo."</p>
-                    <div class="text-warning">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                    </div>
-                  </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card testimonial-card shadow h-100">
+            <div class="card-body">
+              <div class="d-flex align-items-center mb-3">
+                <div>
+                  <h5 class="card-title mb-0">Carlos Arcos</h5>
+                  <small class="text-muted">Cliente desde 2018</small>
                 </div>
               </div>
+              <p class="card-text">"Descubrí este lugar por recomendación y ahora vengo cada semana. Las postres son
+                adictivos y el servicio es rápido, perfecto para mi hora de almuerzo."</p>
+              <div class="text-warning">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
           </div>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
- <!--Sucursales-->
+  <!--SUCURSALES-->
   <section id="sucursales" class="container mt-5">
     <section id="SUCURSALES"></section>
     <h1 class="text-center mb-4 text-black">Nuestras Sucursales</h1>
@@ -524,7 +549,10 @@
         <p>Teléfono: (56-63) 2268436</p>
         <p>Correo: contacto@aniquiladordehambre1.cl</p>
         <p>Ubicación de referencia: Al Costado de "Camping Isla Teja"</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3064.938885391047!2d-73.26963952423975!3d-39.8083626506454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9615edfb02eb70f9%3A0xa3be76db62c65f61!2sLos%20Alamos%201121%2C%205090000%20Valdivia%2C%20Los%20R%C3%ADos!5e0!3m2!1ses!2scl!4v1743521538025!5m2!1ses!2scl" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3064.938885391047!2d-73.26963952423975!3d-39.8083626506454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9615edfb02eb70f9%3A0xa3be76db62c65f61!2sLos%20Alamos%201121%2C%205090000%20Valdivia%2C%20Los%20R%C3%ADos!5e0!3m2!1ses!2scl!4v1743521538025!5m2!1ses!2scl"
+          width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       <div class="col-12 col-md-6 border py-3">
         <h4>Sucursal Centro de Valdivia</h4>
@@ -532,46 +560,49 @@
         <p>Teléfono: (56-63) 2268437</p>
         <p>Correo: contacto@aniquiladordehambre2.cl</p>
         <p>Ubicación de referencia: Esquina Aledaña a "Servicio de salud Los Ríos"</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3064.7085303448544!2d-73.2417344242394!3d-39.81352935095421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9615ee784587989f%3A0xa03ab87ee45bfdce!2sAv.%20Alemania%20795%2C%205090000%20Valdivia%2C%20Los%20R%C3%ADos!5e0!3m2!1ses!2scl!4v1743521690743!5m2!1ses!2scl" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3064.7085303448544!2d-73.2417344242394!3d-39.81352935095421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9615ee784587989f%3A0xa03ab87ee45bfdce!2sAv.%20Alemania%20795%2C%205090000%20Valdivia%2C%20Los%20R%C3%ADos!5e0!3m2!1ses!2scl!4v1743521690743!5m2!1ses!2scl"
+          width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
     <h6 class="text-center mt-3">Presione en "Ampliar el mapa" para saber cómo llegar mediante Google Maps</h6>
   </section>
 
- <!--Formulario de contacto. ahora con validaciones...-->
+  <!--Formulario de contacto. Con validaciones...-->
   <section id="contacto" class="container my-5">
     <section id="CONTACTO"></section>
-    <h1 class="text-center text-black">Contáctanos</h1>
+    <h1 class="text-center text-black">Contacto</h1>
     <form id="formContacto" action="#" method="POST">
-        <div class="mb-3">
-          <label for="nombre" class="form-label">Nombre y Apellido</label>
-          <input type="text" class="form-control" id="nombre" name="nombre" required>
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre y Apellido</label>
+        <input type="text" class="form-control" id="nombre" name="nombre" required>
       </div>
       <div class="mb-3">
-          <label for="email" class="form-label">Correo Electrónico</label>
-          <input type="email" class="form-control" id="email" name="email" required>
+        <label for="email" class="form-label">Correo Electrónico</label>
+        <input type="email" class="form-control" id="email" name="email" required>
       </div>
       <div class="mb-3">
-          <label for="telefono" class="form-label">Teléfono</label>
-          <input type="tel" class="form-control" id="telefono" name="telefono" required>
+        <label for="telefono" class="form-label">Teléfono</label>
+        <input type="tel" class="form-control" id="telefono" name="telefono" required>
       </div>
       <div class="mb-3">
-          <label for="consulta_reclamo" class="form-label">Consulta/Reclamo</label>
-          <select class="form-select" id="consulta_reclamo" name="consulta_reclamo" required>
-              <option value="">Seleccione una opción</option>
-              <option value="consulta">Consulta</option>
-              <option value="reclamo">Reclamo</option>
-          </select>
+        <label for="consulta_reclamo" class="form-label">Consulta/Reclamo</label>
+        <select class="form-select" id="consulta_reclamo" name="consulta_reclamo" required>
+          <option value="">Seleccione una opción</option>
+          <option value="consulta">Consulta</option>
+          <option value="reclamo">Reclamo</option>
+        </select>
       </div>
       <div class="mb-3">
-          <label for="mensaje" class="form-label">Mensaje</label>
-          <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+        <label for="mensaje" class="form-label">Mensaje</label>
+        <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
       </div>
       <button type="submit" class="btn btn-primary">Enviar</button>
     </form>
   </section>
 
-  <!--Footer con datos contacto-->
+  <!--FOOTER con datos contacto Y redes (video meme)-->
   <footer class="text-center py-3">
     <p>Teléfono Sucursal Isla Teja: (56-63) 2268436 | Teléfono Sucursal Valdivia Centro: (56-63) 2268437 </p>
     <p>Síguenos en nuestras redes sociales</p>
@@ -584,4 +615,3 @@
 </body>
 
 </html>
-

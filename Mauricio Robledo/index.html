@@ -53,11 +53,11 @@
   </div>
 
 
-  <div class="separator mt-0"></div> <!--Separador sin margen top (mt-0)-->
+  <div class="separator mt-0"></div> <!--Separador línea negra, sin margen top (mt-0)-->
 
-  <!--Carrusel de Productos-->
-  <div class="container py-5">
-    <div id="carouselMenu" class="carousel slide" data-bs-ride="carousel">
+  <!-- Carrusel de Productos -->
+  <div class="container d-flex justify-content-center py-5">
+    <div id="carouselMenu" class="carousel slide" data-bs-ride="carousel" style="max-width: 600px; width: 100%;">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="imágenes/2.png" class="d-block w-100" alt="Sándwich">
@@ -69,120 +69,125 @@
           <img src="imágenes/3.png" class="d-block w-100" alt="Bebestible">
         </div>
       </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselMenu" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselMenu" data-bs-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </button>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselMenu" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselMenu" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
     </div>
   </div>
-
-  <div class="separator mt-0"></div>
 
   <!--CARTA-->
   <div class="container-fluid text-center p-0">
     <div class="separator mt-0"></div>
-    <h1 class="fw-bold text-white" style="background-color: #d8900a;">CARTA</h1> <!-- Título de la carta -->
+    <h1 class="fw-bold text-black" style="background-color: #d8860a;">CARTA</h1> <!-- Título de la carta -->
   </div>
   <div class="container text-center py-5">
-    <img src="imágenes/Carta logo.png" alt="Logo" class="img-fluid" style="max-width: 100%; height: auto;">
+    <img src="imágenes/Carta logo.png" alt="Logo" class="img-fluid carta-logo">
   </div>
 
 
    <!--Carta de pancitos-->
-<div class="container mt-5">
-  <h2 class="text-center mb-4 fs-4 fs-md-3 fs-lg-1">SANDWICHES</h2>
-  <div class="row">
-    <!-- Plato 1 -->
-    <div class="col-md-4 mb-4">
-      <div class="card">
-        <div class="d-flex justify-content-center">
-          <img src="imágenes/Logo.png" class="card-img-top img-fluid" alt="Nombre del Plato" style="max-width: 80%; height: auto;">
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Sandwich bonito</h5>
-          <p class="card-text">Sándwich con hamburguesa de vacuno, queso ranco, lechuga y tomate.</p>
-          <p class="card-text"><strong>Precio: $5.990</strong></p>
-        </div>
-      </div>
-    </div>
-    <!-- Plato 2 -->
-    <div class="col-md-4 mb-4">
-      <div class="card">
-        <img src="ruta-a-imagen.jpg" class="card-img-top" alt="Nombre del Plato">
-        <div class="card-body">
-          <h5 class="card-title">Nombre del Plato</h5>
-          <p class="card-text">Descripción breve del plato.</p>
-          <p class="card-text"><strong>Precio: $XX.XXX</strong></p>
+  <div class="container text-center">
+    <h2 class="text-white" style="background-color: #000000;">Sándwiches</h2> <!-- Título de la carta -->
+    <div class="row">
+      <!-- Plato 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="d-flex justify-content-center">
+            <img src="imágenes/Logo.png" class="card-img-top img-fluid" alt="Nombre del Plato" style="max-width: 80%; height: auto;">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Sandwich bonito</h5>
+            <p class="card-text">Sándwich con hamburguesa de vacuno, queso ranco, lechuga y tomate.</p>
+            <p class="card-text"><strong>Precio: $5.990</strong></p>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- Plato 3 -->
-    <div class="col-md-4 mb-4">
-      <div class="card">
-        <img src="ruta-a-imagen.jpg" class="card-img-top" alt="Nombre del Plato">
-        <div class="card-body">
-          <h5 class="card-title">Nombre del Plato</h5>
-          <p class="card-text">Descripción breve del plato.</p>
-          <p class="card-text"><strong>Precio: $XX.XXX</strong></p>
+      <!-- Plato 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="d-flex justify-content-center">
+            <img src="imágenes/Logo.png" class="card-img-top img-fluid" alt="Nombre del Plato" style="max-width: 80%; height: auto;">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Sandwich bonito</h5>
+            <p class="card-text">Sándwich con hamburguesa de vacuno, queso ranco, lechuga y tomate.</p>
+            <p class="card-text"><strong>Precio: $5.990</strong></p>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- Plato 4 -->
-    <div class="col-md-4 mb-4">
-      <div class="card">
-        <img src="ruta-a-imagen.jpg" class="card-img-top" alt="Nombre del Plato">
-        <div class="card-body">
-          <h5 class="card-title">Nombre del Plato</h5>
-          <p class="card-text">Descripción breve del plato.</p>
-          <p class="card-text"><strong>Precio: $XX.XXX</strong></p>
+      <!-- Plato 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="d-flex justify-content-center">
+            <img src="imágenes/Logo.png" class="card-img-top img-fluid" alt="Nombre del Plato" style="max-width: 80%; height: auto;">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Sandwich bonito</h5>
+            <p class="card-text">Sándwich con hamburguesa de vacuno, queso ranco, lechuga y tomate.</p>
+            <p class="card-text"><strong>Precio: $5.990</strong></p>
+          </div>
+        </div>
+      </div>
+      <!-- Plato 4 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="d-flex justify-content-center">
+            <img src="imágenes/Logo.png" class="card-img-top img-fluid" alt="Nombre del Plato" style="max-width: 80%; height: auto;">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Sandwich bonito</h5>
+            <p class="card-text">Sándwich con hamburguesa de vacuno, queso ranco, lechuga y tomate.</p>
+            <p class="card-text"><strong>Precio: $5.990</strong></p>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 
   <!--QUIENES SOMOS Y TESTIMONIOS-->
   <section id="historia" class="py-5">
     <div class="container">
-        <section id="QUIENESSOMOS" class="py-5"></section>
-        <h2 class="text-center mb-4">Quienes Somos</h2>
-        <h3 class="section-title">Nuestra Historia</h3>
-        <div class="row mb-5">
-            <div class="col-lg-6">
-                <img src="/api/placeholder/600/400" alt="Fundación de El Aniquilador del Hambre" class="img-fluid rounded shadow mb-4">
-                <h4 class="mb-3">Nuestros Inicios (1974)</h4>
-                <p class="text-justify">Todo comenzó en 1974 cuando don Manuel Rodríguez, un apasionado de la gastronomía chilena, abrió un pequeño local en el centro de Santiago. Con apenas cuatro mesas y un menú limitado, El Aniquilador del Hambre nació con la promesa de ofrecer las mejores preparaciones caseras a precios accesibles.</p>
-            </div>
-            <div class="col-lg-6">
-                <img src="/api/placeholder/600/400" alt="Expansión de El Aniquilador del Hambre" class="img-fluid rounded shadow mb-4">
-                <h4 class="mb-3">Crecimiento y Expansión (1990-2024)</h4>
-                <p class="text-justify">Durante los años 90, la popularidad de nuestros sandwiches y platos típicos nos permitió expandirnos a una segunda ubicación. Hoy, después de 50 años de trayectoria, mantenemos la misma pasión por servir alimentos de calidad, respetando las recetas originales que han alimentado a generaciones de chilenos, pero incorporando innovaciones que nos mantienen vigentes en el competitivo mercado gastronómico.</p>
-            </div>
+      <section id="QUIENESSOMOS"></section>
+      <h1 class="text-center mb-4">Quienes Somos</h1>
+      <h2 class="section-title">Nuestra Historia</h2>
+      <div class="row mb-5">
+        <div class="col-lg-6">
+          <img src="/api/placeholder/600/400" alt="Fundación de El Aniquilador del Hambre" class="img-fluid rounded shadow mb-4">
+          <h4 class="mb-3">Nuestros Inicios (1974)</h4>
+          <p class="text-justify">Todo comenzó en 1974 cuando don Manuel Rodríguez, un apasionado de la gastronomía chilena, abrió un pequeño local en el centro de Santiago. Con apenas cuatro mesas y un menú limitado, El Aniquilador del Hambre nació con la promesa de ofrecer las mejores preparaciones caseras a precios accesibles.</p>
         </div>
-        <h3 class="text-center mb-4">Lo que dicen nuestros clientes</h3>
-        <div class="row">
-            <div class="col-md-4 mb-4">
-                <div class="card testimonial-card shadow h-100">
-                    <div class="card-body">
-                        <div class="d-flex align-items-center mb-3">
-                            <div>
-                                <h5 class="card-title mb-0">Carolina Méndez</h5>
-                                <small class="text-muted">Cliente desde 2010</small>
-                            </div>
-                        </div>
-                        <p class="card-text">"El chacarero es simplemente el mejor de Valdivia. Vengo desde hace más de 10 años y la calidad nunca ha cambiado. Atención impecable y ambiente familiar."</p>
-                        <div class="text-warning">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
+        <div class="col-lg-6">
+          <img src="/api/placeholder/600/400" alt="Expansión de El Aniquilador del Hambre" class="img-fluid rounded shadow mb-4">
+          <h4 class="mb-3">Crecimiento y Expansión (1990-2024)</h4>
+          <p class="text-justify">Durante los años 90, la popularidad de nuestros sandwiches y platos típicos nos permitió expandirnos a una segunda ubicación. Hoy, después de 50 años de trayectoria, mantenemos la misma pasión por servir alimentos de calidad, respetando las recetas originales que han alimentado a generaciones de chilenos, pero incorporando innovaciones que nos mantienen vigentes en el competitivo mercado gastronómico.</p>
+        </div>
+      </div>
+
+    <h2 class="text-center mb-4">Lo que dicen nuestros clientes</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card testimonial-card shadow h-100">
+            <div class="card-body">
+              <div class="d-flex align-items-center mb-3">
+                <div>
+                  <h5 class="card-title mb-0">Carolina Méndez</h5>
+                  <small class="text-muted">Cliente desde 2010</small>
                 </div>
+              </div>
+              <p class="card-text">"El chacarero es simplemente el mejor de Valdivia. Vengo desde hace más de 10 años y la calidad nunca ha cambiado. Atención impecable y ambiente familiar."</p>
+              <div class="text-warning">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
             </div>
+          </div>
+        </div>
             <div class="col-md-4 mb-4">
                 <div class="card testimonial-card shadow h-100">
                     <div class="card-body">
@@ -282,15 +287,13 @@
 
 <!-- Footer con datos contacto-->
 <footer class="text-center py-3">
-  <p>Teléfono Sucursal 1: 555-1234 | Teléfono Sucursal 2: 555-5678</p>
+  <p>Teléfono Sucursal Isla Teja: 555-1234 | Teléfono Sucursal Valdivia Centro: 555-5678</p>
   <p>Síguenos en nuestras redes sociales</p>
   <p>
     <a href="https://youtu.be/dQw4w9WgXcQ?si=0MmxuAYhrQx-q0-z" target="_blank">Facebook</a> |
     <a href="https://youtu.be/dQw4w9WgXcQ?si=0MmxuAYhrQx-q0-z" target="_blank">Instagram</a>
   </p>
 </footer>
-
-
 
 </body>
 

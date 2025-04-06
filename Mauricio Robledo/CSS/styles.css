@@ -1,9 +1,28 @@
-/* Estilos generales */
+/* Estilos generales del Body */
 body {
   font-family: 'Bangers', cursive; /* Fuente personalizada */
   background-color: #f4f4f4;
   margin: 0;
   padding: 0;
+}
+
+/* Estilo de Títulos h1,2 y 3 */
+h1, h2, h3 {
+  font-weight: bold;
+}
+h1 {
+  font-size: 4rem;
+  color: #fff;
+  background-color: #d8900a;
+  padding: 50px;
+}
+h2 {
+  font-size: 2rem;
+  color: #d8900a;
+}
+h3 {
+  font-size: 1.5rem;
+  color: black;
 }
 
 /* Separador improvisado negro */
@@ -13,12 +32,10 @@ body {
 }
 
 /* Navbar */
-
 .navbar {
   background-color: rgba(0, 0, 0, 0.8);
   padding: 20px 0; /* Aumentamos el padding vertical */
 }
-
 .navbar .navbar-brand, .navbar .navbar-nav .nav-link {
   color: rgb(255, 255, 255); /* Color de texto de la navbar */
 }
@@ -31,7 +48,6 @@ body {
 .navbar span {
   font-size: 1.3rem; /* Aumenta el tamaño del texto */
 }
-
 .navbar .nav-link {
   color: white !important; /* Forzamos blanco como color base */
   transition: color 0.3s ease;
@@ -40,37 +56,25 @@ body {
   color: #ff9900 !important; /* Naranja al pasar el mouse */
 }
 
-
 /* Carrusel */
 .carousel-item img {
   height: auto;
-  width: 700%;
+  width: 100%;
   object-fit: cover;
   object-position: center;
-}
-/* Títulos */
-h1, h2, h3 {
-  font-weight: bold;
+  border-radius: 10px;
 }
 
-h1 {
-  font-size: 4rem;
-  color: #fff;
-  background-color: #d8900a;
-  padding: 50px;
+/* Imagen Carta */
+.carta-logo {
+  max-width: 300px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-h2 {
-  font-size: 2rem;
-  color: #d8900a;
-}
-
-h3 {
-  font-size: 1.5rem;
-  color: black;
-}
-
-/* Cartas de los productos */
+/* Comportamientos y estilos de las Cards de los productos */
 .card {
   border: none;
   border-radius: 8px;
@@ -78,27 +82,22 @@ h3 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
-
 .card-body {
   padding: 20px;
   background-color: #fff;
 }
-
 .card:hover {
   transform: translateY(-10px);
 }
-
 .card-title {
   font-size: 1.2rem;
   font-weight: bold;
   color: #333;
 }
-
 .card-text {
   font-size: 1rem;
   color: #666;
 }
-
 .card-text strong {
   font-size: 1.1rem;
   color: #d8900a;
@@ -115,44 +114,49 @@ img {
   text-align: justify;
   line-height: 1.6;
 }
-
 #historia .testimonial-card {
   border: none;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 .testimonial-card .card-body {
   padding: 20px;
 }
-
 .testimonial-card .card-text {
   font-size: 1rem;
   color: #444;
 }
 
+
 /* Botones y controles del carrusel */
 .carousel-control-prev-icon, .carousel-control-next-icon {
-  background-color: #d8900a;
+  background-color: rgba(0, 0, 0, 0.4);
 }
+
+
 
 /* Estilo de las sucursales */
 #sucursales .card {
   border-radius: 8px;
   overflow: hidden;
 }
-
 #sucursales .card-body {
   padding: 15px;
   background-color: #fff;
 }
-
 #sucursales .card-title {
   font-size: 1.2rem;
   font-weight: bold;
   color: #333;
 }
-
 #sucursales .card-text {
   font-size: 1rem;
   color: #666;
+}
+footer {
+  color: #f4f4f4;
+background-color: #000;
+}
+
+html {
+  scroll-padding-top: 105px; /* Ajusta los "Link" del Navbar para que deje sobre el título siempre */
 }

@@ -18,7 +18,7 @@ h1 {
 }
 h2 {
   font-size: 2rem;
-  color: #d8900a;
+  color: #000000;
 }
 h3 {
   font-size: 1.5rem;
@@ -31,7 +31,7 @@ h3 {
   margin: 0px;
 }
 
-/* Navbar */
+/* Caract. Navbar */
 .navbar {
   background-color: rgba(0, 0, 0, 0.8);
   padding: 20px 0; /* Aumentamos el padding vertical */
@@ -65,6 +65,10 @@ h3 {
   border-radius: 10px;
 }
 
+.carousel-control-prev-icon, .carousel-control-next-icon {    /*Boton del carrusel*/
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
 /* Imagen Carta */
 .carta-logo {
   max-width: 300px;
@@ -84,26 +88,26 @@ h3 {
 }
 .card-body {
   padding: 20px;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 .card:hover {
   transform: translateY(-10px);
 }
 .card-title {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: bold;
   color: #333;
 }
 .card-text {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #666;
 }
 .card-text strong {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: #d8900a;
 }
 
-/* Estilo de imágenes */
+/* Estilo de imágenes (estilio general) */
 img {
   max-width: 100%;
   height: auto;
@@ -122,17 +126,9 @@ img {
   padding: 20px;
 }
 .testimonial-card .card-text {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #444;
 }
-
-
-/* Botones y controles del carrusel */
-.carousel-control-prev-icon, .carousel-control-next-icon {
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-
 
 /* Estilo de las sucursales */
 #sucursales .card {
@@ -149,7 +145,7 @@ img {
   color: #333;
 }
 #sucursales .card-text {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #666;
 }
 footer {
@@ -159,4 +155,6 @@ background-color: #000;
 
 html {
   scroll-padding-top: 105px; /* Ajusta los "Link" del Navbar para que deje sobre el título siempre */
+  scroll-behavior: smooth;
 }
+
